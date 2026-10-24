@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Explore the World</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Wander<span>lust.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#destinations" class="nav-btn">Explore Now ↗</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="tagline">✦ YOUR NEXT ADVENTURE STARTS HERE</p>
+
+                <h1>Discover the<br>beauty of <span>the world.</span></h1>
+
+                <p class="hero-description">
+                    Explore breathtaking places, create beautiful memories,
+                    and find your next unforgettable destination.
+                </p>
+
+                <a href="#destinations" class="primary-btn">
+                    Explore Destinations <span>→</span>
+                </a>
+
+                <div class="hero-stats">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Destinations</p>
+                    </div>
+
+                    <div>
+                        <h3>10K+</h3>
+                        <p>Happy Travellers</p>
+                    </div>
+
+                    <div>
+                        <h3>4.9★</h3>
+                        <p>Average Rating</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+                    alt="Beautiful mountain landscape">
+
+                <div class="floating-card">
+                    <span>📍</span>
+                    <div>
+                        <strong>Nature is calling</strong>
+                        <p>Your adventure awaits</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations-section" id="destinations">
+            <div class="section-heading">
+                <div>
+                    <p class="tagline">✦ FIND YOUR PARADISE</p>
+                    <h2>Popular <span>Destinations</span></h2>
+                    <p class="section-description">
+                        Find a place that makes your heart happy.
+                    </p>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <span>🔍</span>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search destinations...">
+            </div>
+
+            <p id="statusMessage" class="status-message">
+                Discovering beautiful places for you...
+            </p>
+
+            <div class="destination-grid" id="destinationGrid">
+                <!-- Destination cards will be loaded using JavaScript -->
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+<section class="booking-section" id="booking">
+    <div class="booking-container">
+
+        <div class="booking-info">
+            <p class="tagline">PLAN YOUR NEXT ADVENTURE</p>
+
+            <h2>Your Journey<br>
+                <span>Starts Here.</span>
+            </h2>
+
+            <p>
+                Choose your favourite destination and plan
+                an unforgettable travel experience with us.
+            </p>
+        </div>
+
+        <form id="bookingForm">
+
+            <h3>Book Your Trip ✈️</h3>
+
+            <label for="customerName">Full Name</label>
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="customerEmail">Email Address</label>
+            <input
+                type="email"
+                id="customerEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="selectedDestination">Destination</label>
+            <select id="selectedDestination" required>
+                <option value="">Choose a destination</option>
+            </select>
+
+            <label for="travelDate">Travel Date</label>
+            <input
+                type="date"
+                id="travelDate"
+                required
+            >
+
+            <button type="submit" class="primary-btn">
+                Submit Booking →
+            </button>
+
+            <p id="bookingMessage" aria-live="polite"></p>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- My Bookings Section --><section class="bookings-section" id="my-bookings">
+    <div class="bookings-container">
+        <p class="tagline">YOUR TRAVEL PLANS</p>
+        <h2>My <span>Bookings</span></h2>
+        <p>View your saved trip bookings below.</p>    <button type="button" id="viewBookingsBtn" class="primary-btn">
+        View My Bookings
+    </button>
+
+    <div id="bookingsList" aria-live="polite"></div>
+</div>
+
+
+</section>
+        <section class="about-section" id="about">
+            <p class="tagline">✦ ABOUT WANDERLUST</p>
+            <h2>Your journey, <span>our passion.</span></h2>
+            <p>
+                We help travellers discover amazing destinations and plan
+                memorable journeys. Your next adventure begins here.
+            </p>
+            <a href="#destinations" class="primary-btn">Start Exploring →</a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">Wander<span>lust.</span></a>
+        <p>Made for travellers with dreams. © 2026 Wanderlust.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
